@@ -1,0 +1,53 @@
+<!doctype html>
+<html> 
+
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Título de la web</title>    
+</head>
+
+<script type="text/javascript">
+
+//git checkout -b fab1    esta linea es para crear una Rama en git de  Local
+//git commit –m “Primer commit del index”.
+	function ProgramaPagoSalario()
+	{
+			pago_hora = 10;
+		    p_h_e = 0.03;
+		    j = 8;			
+			document.write(MostrarPago());
+	}
+	console.log(ProgramaPagoSalario());
+	
+	
+	
+	function horas_Trabajada(h)
+	{
+		
+		h = prompt("Ingresa la cantidad de horas trabajada");
+		return h;
+	}
+	
+	function CalcularSalario()
+	{
+		horas = horas_Trabajada();		
+		pago = horas * pago_hora + (horas - j)*p_h_e;		
+		return pago;	
+	}
+	
+	function MostrarPago()
+	{
+		salario = CalcularSalario();
+		document.write("Hoy cobraras " + salario);
+	}
+	
+</script>
+
+
+<body>
+  Contenido de la web
+</body>
+
+
+</html>
